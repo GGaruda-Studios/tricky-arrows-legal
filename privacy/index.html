@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — Tricky Arrows</title>
-<meta name="description" content="Tricky Arrows collects nothing, sends nothing, and cannot reach the internet. Everything it knows about you stays on your device.">
+<meta name="description" content="What Tricky Arrows stores on your device, the usage and crash data it sends only if you agree, and what Google Play Games keeps for you.">
 <meta name="color-scheme" content="light dark">
 <link rel="stylesheet" href="../style.css">
 </head>
@@ -17,7 +17,7 @@
 		Google Play package <span class="package">pastry.trickyarrows.tap.puzzle</span><br>
 		Published by Golden Garuda Studios
 	</p>
-	<p class="meta">Last updated <time datetime="2026-09-19">19 September 2026</time>.</p>
+	<p class="meta">Last updated <time datetime="2026-10-06">6 October 2026</time>.</p>
 </header>
 
 <main>
@@ -25,19 +25,23 @@
 	<section class="lede">
 		<h2>The short version</h2>
 		<p>
-			Tricky Arrows collects nothing, sends nothing, and has no way to reach the
-			internet. There are no accounts, no advertising, no analytics and no
-			third-party SDKs. Everything the app knows about you stays on your device.
+			Tricky Arrows keeps your progress on your device. It shows no ads and sells
+			nothing about you. Two things leave your device, and both are optional:
+			anonymous usage and crash data, sent to Google's Firebase only if you say yes
+			when the app first asks; and, if you use Google Play Games, a copy of your
+			progress plus your achievements and leaderboard scores, kept in your Google
+			account.
 		</p>
 	</section>
 
-	<h2>What the app stores</h2>
-	<p>One file on your device, holding only what the game needs to work:</p>
+	<h2>What the app stores on your device</h2>
+	<p>One file, holding only what the game needs to work:</p>
 	<ul>
-		<li>which puzzles you have completed, and the puzzle you are part-way through</li>
-		<li>your daily-challenge streak and the date of your last win</li>
-		<li>your settings: sound, music, vibration, guideline, zen mode, theme, and
-			reduced motion</li>
+		<li>which puzzles you have completed, the puzzle you are part-way through, and
+			your best time, mistakes and hints for each completed puzzle</li>
+		<li>your daily-challenge streak and the days you completed it</li>
+		<li>your settings: sound, music, vibration, zen mode, theme, skins, the daily
+			reminder, and whether you agreed to share usage and crash data</li>
 		<li>whether you have seen the tutorial</li>
 	</ul>
 	<p>
@@ -45,15 +49,87 @@
 		Arrows. Deleting the app's data from Android Settings erases it immediately.
 	</p>
 
-	<h2>What the app does not do</h2>
+	<h2>Usage and crash data (only if you agree)</h2>
+	<p>
+		The first time you open Tricky Arrows it asks whether to share anonymous usage and
+		crash data. Until you answer yes, none is collected: the app ships with
+		collection switched off. You can change your answer at any time in
+		<strong>Settings → Share usage &amp; crash data</strong>.
+	</p>
+	<p>If you agree, the app uses two Google Firebase services:</p>
 	<ul>
-		<li>It does not collect, transmit or sell personal information.</li>
-		<li>It does not use advertising or advertising identifiers.</li>
-		<li>It does not use analytics, crash reporting or any tracking technology.</li>
-		<li>It does not request the <span class="package">INTERNET</span> permission, so
-			it is not technically capable of sending your data anywhere. The only
-			permission it requests is <span class="package">VIBRATE</span>, used for the
-			small haptic taps when you remove an arrow.</li>
+		<li><strong>Firebase Analytics</strong> receives game events — a puzzle started,
+			won, failed or left, a life lost, a hint used — with the puzzle number and
+			difficulty. Firebase adds standard technical details: the app version, your
+			device model and Android version, your approximate country (derived from your
+			network address, which is not stored), and a random identifier for this
+			installation of the app. We use this only to see where puzzles are too hard or
+			too easy and to improve the game.</li>
+		<li><strong>Firebase Crashlytics</strong> receives a report if the app crashes:
+			what the app was doing, the app version, your device model and Android version,
+			and a random identifier for this installation. We use this only to fix
+			bugs.</li>
+	</ul>
+	<p>
+		Neither contains your name, email address, contacts, photos or location. The app
+		tells Firebase that consent for advertising storage, advertising user data and ad
+		personalization is <strong>denied</strong>, so nothing collected is used for
+		advertising. Firebase can read Android's advertising identifier on devices where
+		it is available; with advertising consent denied it is not used for ads, and you
+		can delete or reset it in Android Settings → Privacy → Ads.
+	</p>
+	<p>
+		This data is processed by Google under the
+		<a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase
+		privacy terms</a> and kept no longer than our Firebase project's retention
+		setting allows (at most 14 months). Turning the switch off stops all further
+		collection. To have data already collected from your device deleted, email us
+		at the address below.
+	</p>
+
+	<h2>Google Play Games (optional)</h2>
+	<p>
+		If you are signed in to Google Play Games on your device, Tricky Arrows uses it to:
+	</p>
+	<ul>
+		<li><strong>save your progress online</strong> — a copy of the save file described
+			above, stored in your Google account's Play Games saved games, so you can carry
+			on after reinstalling or on a new phone;</li>
+		<li><strong>record achievements</strong> such as levels and stars earned; and</li>
+		<li><strong>post scores to leaderboards</strong> — levels cleared and stars earned.
+			Other players see your Play Games name and avatar next to your score, as with
+			any Play Games leaderboard.</li>
+	</ul>
+	<p>
+		We do not receive your Google account details. This data is held by Google under
+		<a href="https://policies.google.com/privacy" rel="noopener">Google's Privacy
+		Policy</a>, and you can manage or delete it in the Google Play Games app and in
+		your Google account settings. If you do not use Play Games, nothing is sent.
+	</p>
+
+	<h2>Daily reminder</h2>
+	<p>
+		Once you have completed a Daily Challenge, the app may ask Android for permission
+		to show notifications. If you allow it, Tricky Arrows schedules one reminder in
+		the evening when today's puzzle is still waiting. The reminder is scheduled on
+		your device by the app itself; no server is involved and nothing is sent. Turn it
+		off in <strong>Settings → Daily reminder</strong> or in Android's notification
+		settings.
+	</p>
+
+	<h2>Permissions</h2>
+	<ul>
+		<li><span class="package">INTERNET</span> and
+			<span class="package">ACCESS_NETWORK_STATE</span> — for the optional usage and
+			crash data and for Google Play Games.</li>
+		<li><span class="package">POST_NOTIFICATIONS</span>,
+			<span class="package">RECEIVE_BOOT_COMPLETED</span> and
+			<span class="package">WAKE_LOCK</span> — for the daily reminder, including
+			keeping it scheduled after your phone restarts.</li>
+		<li><span class="package">VIBRATE</span> — for the small haptic taps when you
+			remove an arrow.</li>
+		<li><span class="package">AD_ID</span> — added by Firebase; see above. The app
+			shows no ads.</li>
 	</ul>
 
 	<h2>If you email us</h2>
@@ -65,9 +141,8 @@
 		those lines first if you prefer.
 	</p>
 	<p>
-		The app itself sends nothing — it hands the draft to your email app and stops
-		there. If you do send us a message, we will see your email address and whatever
-		you wrote, and we use it only to answer you.
+		If you do send us a message, we will see your email address and whatever you
+		wrote, and we use it only to answer you.
 	</p>
 
 	<h2>Backups</h2>
@@ -83,22 +158,32 @@
 		under Google → Backup.
 	</p>
 
+	<h2>What we do not do</h2>
+	<ul>
+		<li>We do not sell or rent any information about you.</li>
+		<li>We do not show advertising, and nothing collected is used for advertising.</li>
+		<li>We do not collect your name, email address, contacts, photos or precise
+			location through the app.</li>
+	</ul>
+
 	<h2>Children</h2>
 	<p>
-		Tricky Arrows is a puzzle game suitable for all ages. Because it collects no
-		personal information from anyone, it collects none from children either.
+		Tricky Arrows is a puzzle game for a general audience. We do not knowingly
+		collect personal information from children. Usage and crash data are off unless
+		they are switched on, and contain no names or contact details. If you believe a
+		child has sent us personal information, email us and we will delete it.
 	</p>
 
 	<h2>Changes</h2>
 	<p>
-		If a future version of Tricky Arrows ever collects or transmits anything, this
-		page will be updated before that version is released, and the change will be
+		If a future version of Tricky Arrows changes what it collects or sends, this page
+		will be updated before that version is released, and the change will be
 		described in the app's release notes on Google Play.
 	</p>
 
 	<h2>Contact</h2>
 	<p>
-		Questions about this policy:
+		Questions about this policy, or requests to delete data:
 		<a href="mailto:goldengarudastudios@gmail.com">goldengarudastudios@gmail.com</a>
 	</p>
 
