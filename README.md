@@ -63,6 +63,7 @@ running them through Jekyll.
     index.html           landing page, links to both documents
     privacy/index.html   Privacy Policy      -> /privacy
     terms/index.html     Terms of Service    -> /terms
+    delete-data/index.html  data deletion steps -> /delete-data (Play Data safety link)
     style.css            shared styles, the app's own colour palette
     .nojekyll            serve as static files, do not run Jekyll
 
