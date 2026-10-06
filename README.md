@@ -47,7 +47,7 @@ behaviour. A directory index is the one form that cannot 404.
 
 Deliberate, and it should stay that way.
 
-- The privacy policy promises that nothing is collected without consent. A
+- The privacy policy describes exactly what the app sends and where. A
   policy page that itself calls out to a third party — a CDN font, an analytics
   snippet — contradicts the document it is serving. Embedding Google Fonts without
   consent has been found to breach GDPR in at least one German ruling, precisely
