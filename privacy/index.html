@@ -17,7 +17,7 @@
 		Google Play package <span class="package">pastry.trickyarrows.tap.puzzle</span><br>
 		Published by Golden Garuda Studios
 	</p>
-	<p class="meta">Last updated <time datetime="2026-10-06">6 October 2026</time>.</p>
+	<p class="meta">Last updated <time datetime="2026-10-22">22 October 2026</time>.</p>
 </header>
 
 <main>
@@ -27,7 +27,8 @@
 		<p>
 			Tricky Arrows keeps your progress on your device. It shows no ads and sells
 			nothing about you. Two things leave your device: anonymous usage and crash
-			data, sent to Google's Firebase, which you can switch off in Settings; and, if
+			data, sent to Google's Firebase, which you can switch off in Settings (in
+			Europe it stays off unless you say yes); and, if
 			you use Google Play Games, a copy of your
 			progress plus your achievements and leaderboard scores, kept in your Google
 			account.
@@ -39,10 +40,14 @@
 	<ul>
 		<li>which puzzles you have completed, the puzzle you are part-way through, and
 			your best time, mistakes and hints for each completed puzzle</li>
-		<li>your daily-challenge streak and the days you completed it</li>
-		<li>your settings: sound, music, vibration, zen mode, theme, skins, the daily
-			reminder, and whether usage and crash data are shared</li>
+		<li>your daily-challenge streak, the days you completed it, and the monthly
+			trophies those days have earned</li>
+		<li>your settings: sound, music, vibration, zen mode, theme, bold arrows, and
+			whether usage and crash data are shared</li>
 		<li>whether you have seen the tutorial</li>
+		<li>a check value computed from the rest of the file, so the app can tell when the
+			file has been edited by hand; it is calculated on your device and never
+			sent</li>
 	</ul>
 	<p>
 		That file is private to the app. Android removes it when you uninstall Tricky
@@ -51,8 +56,13 @@
 
 	<h2>Usage and crash data (you can switch it off)</h2>
 	<p>
-		Tricky Arrows shares anonymous usage and crash data unless you switch it off in
-		<strong>Settings → Privacy options</strong>. Switching it off stops all
+		In the European Economic Area, the United Kingdom and Switzerland, and on any
+		device whose region the app cannot tell, Tricky Arrows asks on first launch
+		whether to share anonymous usage and crash data. Nothing is shared until you tap
+		<strong>Share</strong>; if you choose <strong>Don't share</strong> or close the
+		question, sharing stays off. Everywhere else it is on by default. Wherever you
+		are, you can change your answer at any time in
+		<strong>Settings → Privacy options</strong>, and switching it off stops all
 		further collection straight away.
 	</p>
 	<p>While it is on, the app uses two Google Firebase services:</p>
@@ -94,7 +104,8 @@
 		<li><strong>save your progress online</strong> — a copy of the save file described
 			above, stored in your Google account's Play Games saved games, so you can carry
 			on after reinstalling or on a new phone;</li>
-		<li><strong>record achievements</strong> such as levels and stars earned; and</li>
+		<li><strong>record achievements</strong> such as levels and stars earned (a save
+			file that has been edited by hand is not reported); and</li>
 		<li><strong>post scores to leaderboards</strong> — levels cleared and stars earned.
 			Other players see your Play Games name and avatar next to your score, as with
 			any Play Games leaderboard.</li>
@@ -104,6 +115,13 @@
 		<a href="https://policies.google.com/privacy" rel="noopener">Google's Privacy
 		Policy</a>, and you can manage or delete it in the Google Play Games app and in
 		your Google account settings. If you do not use Play Games, nothing is sent.
+	</p>
+
+	<h2>Reading this policy in the app</h2>
+	<p>
+		The Privacy policy and Terms of service rows in Settings show copies of these
+		pages that ship inside the app, so reading them there sends nothing. Links in
+		them open your browser.
 	</p>
 
 	<h2>Daily reminder</h2>
