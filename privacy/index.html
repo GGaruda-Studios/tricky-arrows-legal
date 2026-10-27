@@ -17,7 +17,7 @@
 		Google Play package <span class="package">pastry.trickyarrows.tap.puzzle</span><br>
 		Published by Golden Garuda Studios
 	</p>
-	<p class="meta">Last updated <time datetime="2026-10-22">22 October 2026</time>.</p>
+	<p class="meta">Last updated <time datetime="2026-10-27">27 October 2026</time>.</p>
 </header>
 
 <main>
@@ -25,13 +25,13 @@
 	<section class="lede">
 		<h2>The short version</h2>
 		<p>
-			Tricky Arrows keeps your progress on your device. It shows no ads and sells
-			nothing about you. Two things leave your device: anonymous usage and crash
-			data, sent to Google's Firebase (in Europe only if you say yes, and you can
-			change your answer in Settings); and, if
-			you use Google Play Games, a copy of your
-			progress plus your achievements and leaderboard scores, kept in your Google
-			account.
+			Tricky Arrows keeps your progress on your device and sells nothing about you.
+			Three things leave your device: anonymous usage and crash data, sent to Google's
+			Firebase (in Europe only if you say yes, and you can change your answer in
+			Settings); the requests behind the optional ads you can choose to watch for a
+			hint or a revive, made through Google AdMob; and, if you use Google Play Games,
+			a copy of your progress plus your achievements and leaderboard scores, kept in
+			your Google account.
 		</p>
 	</section>
 
@@ -84,7 +84,7 @@
 	<p>
 		Neither contains your name, email address, contacts, photos or location. The app
 		tells Firebase that consent for advertising storage, advertising user data and ad
-		personalization is <strong>denied</strong>, so nothing collected is used for
+		personalization is <strong>denied</strong>, so nothing Firebase collects is used for
 		advertising. Firebase can read Android's advertising identifier on devices where
 		it is available; with advertising consent denied it is not used for ads, and you
 		can delete or reset it in Android Settings → Privacy → Ads.
@@ -95,6 +95,27 @@
 		privacy terms</a> and kept no longer than our Firebase project's retention
 		setting allows (at most 14 months). To have data already collected from your device deleted, see
 		<a href="../delete-data/">Delete your data</a> or email us at the address below.
+	</p>
+
+	<h2>Ads (only when you choose to watch one)</h2>
+	<p>
+		Tricky Arrows shows no banners and never interrupts play with an ad. An ad appears
+		only when you ask for one: by tapping the hint button, which carries an
+		<strong>AD</strong> mark, or <strong>Watch ad</strong> to revive after running out
+		of lives. If no ad can be loaded, you get the hint or the revive anyway.
+	</p>
+	<p>
+		These ads are served by <strong>Google AdMob</strong>. To request, show and count
+		them, and to prevent fraud, AdMob receives your device's advertising identifier,
+		your IP address, your device model and Android version, and how you interacted with
+		the ad. In the European Economic Area, the United Kingdom and Switzerland, Google's
+		own consent form asks first whether ads may be personalised; you can change that
+		answer at any time under <strong>Settings → Privacy options → Ad choices</strong>.
+		Everywhere, you can reset your advertising identifier or opt out of ad
+		personalisation in Android Settings → Privacy → Ads. This data is handled by Google
+		under <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How
+		Google uses information from sites or apps that use its services</a>. We receive
+		only totals, never anything that identifies you.
 	</p>
 
 	<h2>Google Play Games (optional)</h2>
@@ -138,15 +159,15 @@
 	<ul>
 		<li><span class="package">INTERNET</span> and
 			<span class="package">ACCESS_NETWORK_STATE</span> — for the optional usage and
-			crash data and for Google Play Games.</li>
+			crash data, for ads and for Google Play Games.</li>
 		<li><span class="package">POST_NOTIFICATIONS</span>,
 			<span class="package">RECEIVE_BOOT_COMPLETED</span> and
 			<span class="package">WAKE_LOCK</span> — for the daily reminder, including
 			keeping it scheduled after your phone restarts.</li>
 		<li><span class="package">VIBRATE</span> — for the small haptic taps when you
 			remove an arrow.</li>
-		<li><span class="package">AD_ID</span> — added by Firebase; see above. The app
-			shows no ads.</li>
+		<li><span class="package">AD_ID</span> — for the ads you choose to watch, and read
+			by Firebase; see above.</li>
 	</ul>
 
 	<h2>If you email us</h2>
@@ -178,7 +199,8 @@
 	<h2>What we do not do</h2>
 	<ul>
 		<li>We do not sell or rent any information about you.</li>
-		<li>We do not show advertising, and nothing collected is used for advertising.</li>
+		<li>We do not show an ad you did not ask for, and nothing in your save file or the
+			usage data is used for advertising.</li>
 		<li>We do not collect your name, email address, contacts, photos or precise
 			location through the app.</li>
 	</ul>
