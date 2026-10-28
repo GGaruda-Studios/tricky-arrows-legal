@@ -17,7 +17,7 @@
 		Google Play package <span class="package">pastry.trickyarrows.tap.puzzle</span><br>
 		Published by Golden Garuda Studios
 	</p>
-	<p class="meta">Last updated <time datetime="2026-10-27">27 October 2026</time>.</p>
+	<p class="meta">Last updated <time datetime="2026-10-28">28 October 2026</time>.</p>
 </header>
 
 <main>
@@ -29,7 +29,7 @@
 			Three things leave your device: anonymous usage and crash data, sent to Google's
 			Firebase (in Europe only if you say yes, and you can change your answer in
 			Settings); the requests behind the optional ads you can choose to watch for a
-			hint or a revive, made through Google AdMob; and, if you use Google Play Games,
+			hint or a revive, made through Unity LevelPlay; and, if you use Google Play Games,
 			a copy of your progress plus your achievements and leaderboard scores, kept in
 			your Google account.
 		</p>
@@ -105,16 +105,19 @@
 		of lives. If no ad can be loaded, you get the hint or the revive anyway.
 	</p>
 	<p>
-		These ads are served by <strong>Google AdMob</strong>. To request, show and count
-		them, and to prevent fraud, AdMob receives your device's advertising identifier,
-		your IP address, your device model and Android version, and how you interacted with
-		the ad. In the European Economic Area, the United Kingdom and Switzerland, Google's
-		own consent form asks first whether ads may be personalised; you can change that
-		answer at any time under <strong>Settings → Privacy options → Ad choices</strong>.
+		These ads are served through <strong>Unity LevelPlay</strong>, Unity's ad mediation, which
+		picks each ad from Unity Ads and the advertisers bidding through Unity's ironSource
+		exchange. To request, show and count them, and to prevent fraud, Unity and the bidding
+		ad partners receive your device's advertising identifier, your IP address (from which
+		an approximate location, such as the country, is worked out), your device model and
+		Android version, and how you interacted with the ad. In the European Economic Area,
+		the United Kingdom and Switzerland, Google's consent form asks first whether ads may be
+		personalised and passes your answer on to Unity; you can change it at any time under
+		<strong>Settings → Privacy options → Ad choices</strong>.
 		Everywhere, you can reset your advertising identifier or opt out of ad
-		personalisation in Android Settings → Privacy → Ads. This data is handled by Google
-		under <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How
-		Google uses information from sites or apps that use its services</a>. We receive
+		personalisation in Android Settings → Privacy → Ads. This data is handled by Unity
+		under its <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" rel="noopener">game
+		player and app user privacy policy</a>. We receive
 		only totals, never anything that identifies you.
 	</p>
 
@@ -168,6 +171,11 @@
 			remove an arrow.</li>
 		<li><span class="package">AD_ID</span> — for the ads you choose to watch, and read
 			by Firebase; see above.</li>
+		<li><span class="package">ACCESS_ADSERVICES_AD_ID</span>,
+			<span class="package">ACCESS_ADSERVICES_ATTRIBUTION</span> and
+			<span class="package">ACCESS_ADSERVICES_TOPICS</span> — Android's Privacy Sandbox
+			ad features, which the ad and Firebase libraries may use where your phone offers
+			them; turn them off in Android Settings → Privacy → Ads privacy.</li>
 	</ul>
 
 	<h2>If you email us</h2>
